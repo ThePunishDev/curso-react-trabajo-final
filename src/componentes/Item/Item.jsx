@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./item.css"; // Importa el archivo CSS que creamos
+import "./Item.css";
 
 const Item = ({ id, nombre, precio, img, stock }) => {
   return (
