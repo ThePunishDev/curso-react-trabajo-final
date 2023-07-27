@@ -1,16 +1,20 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
+import "./item.css"; // Importa el archivo CSS que creamos
 
-const Item = ({ id, nombre, precio, img }) => {
+const Item = ({ id, nombre, precio, img, stock }) => {
   return (
-    <div>
-      < img src={img} alt={nombre} />
-      <h3> Nombre: {nombre} </h3>
-      <p>Precio: {precio} </p>
-      <p>ID: {id} </p>
-      <Link to={`/item/${id}`}> Ver detalles </Link>
+    <div className="item-container">
+      <img className="item-img" src={img} alt={nombre} />
+      <h3 className="item-title">Nombre: {nombre}</h3>
+      <p className="item-price">Precio: {precio}</p>
+      <p className="item-details">ID: {id}</p>
+      <p className="item-details">Stock: {stock}</p>
+      <Link to={`/item/${id}`} className="item-link">
+        Ver detalles
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Item
+export default Item;
