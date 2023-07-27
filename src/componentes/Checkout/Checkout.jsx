@@ -97,7 +97,7 @@ const Checkout = () => {
 
                 <div className="form-group">
                     <label htmlFor=""> Teléfono </label>
-                    <input type="text" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
+                    <input type="tel" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
                 </div>
 
                 <div className="form-group">
